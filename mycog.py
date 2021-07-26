@@ -2,13 +2,22 @@ import discord
 from redbot.core import commands
 from mcstatus import MinecraftServer
 from discord.ext import tasks
-
+import logging
+import random
+from typing import Literal
+from dislash import *
+from redbot.core.bot import Red
+from redbot.core.config import Config
+from discord_buttons_plugin import *
 class MPS(commands.Cog):
+
 
     """My custom cog"""
 
     def __init__(self, bot):
         self.bot = bot
+
+
 
     @commands.command()
     async def mpsvr(self, ctx):
