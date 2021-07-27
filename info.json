@@ -1,0 +1,6 @@
+{
+    "author" : ["Nugget"],
+    "name" : "mps-cogs",
+    "short" : "General bot cogs.",
+    "description" : "Cogs for MPS."
+}
