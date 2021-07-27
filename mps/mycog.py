@@ -47,7 +47,7 @@ class MPS(commands.Cog):
             await ctx.send(embed=embed)
 
     @commands.command()
-    async def test(self, mps):
+    async def test(self, ctx):
         """test"""
         embed = discord.Embed(title=('test'))
         await ctx.send(embed=embed)
