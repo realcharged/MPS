@@ -45,3 +45,13 @@ class MPS(commands.Cog):
             description=('Yell at <@166311283744964608>!')
             )
             await ctx.send(embed=embed)
+    @commands.command()
+    async def common(self, ctx):
+        embed = discord.Embed(title='')
+        embed.add_field(name = 'Music cmds', value= "[prefix]play\n[prefix]now\n[prefix]skip\n[prefix]pause\n[prefix]stop", inline = True)
+        embed.add_field(name = 'Extra cmds', value= ";mpsvr\n;bday\n;uptime\n;rps", inline = True)
+
+        embed.set_author(name='Common Commands')
+
+
+        await ctx.send(embed=embed)
