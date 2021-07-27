@@ -45,3 +45,9 @@ class MPS(commands.Cog):
             description=('Yell at <@166311283744964608>!')
             )
             await ctx.send(embed=embed)
+
+    @commands.command()
+    async def test(self, mps):
+        """test"""
+        embed = discord.Embed(title=('test'))
+        await ctx.send(embed=embed)
