@@ -1,0 +1,12 @@
+{
+    "author": ["ExpertNugget"],
+    "install_msg": "Thanks for installing mps!",
+    "name": "mps",
+    "disabled": false,
+    "short": "Bot for MPS server.",
+    "description": "Bot for MPS server.",
+    "tags": [],
+    "requirements": ["mcstatus"],
+    "hidden": false,
+    "end_user_data_statement": "This cog stores no personal data."
+}
