@@ -6,7 +6,7 @@
     "short": "Bot for MPS server.",
     "description": "Bot for MPS server.",
     "tags": [],
-    "requirements": ["mcstatus", "dislash"],
+    "requirements": ["mcstatus"],
     "hidden": false,
     "end_user_data_statement": "This cog stores no personal data."
 }
