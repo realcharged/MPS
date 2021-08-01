@@ -33,6 +33,7 @@ class MPS(commands.Cog):
                        .format(status.players.online)),
                 description=('{0}'.format(", ".join(query.players.names)))
             )
+            embed.set_image(url="https://premium.bisecthosting.com/index.php?r=status/95613.png")
             embed.set_author(name='MPSVR Status')
             embed.set_footer(text='End of list')
 
