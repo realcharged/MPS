@@ -2,13 +2,8 @@ import discord
 from redbot.core import commands
 from mcstatus import MinecraftServer
 from discord.ext import tasks
-import logging
-import random
-from typing import Literal
-from dislash import *
 from redbot.core.bot import Red
 from redbot.core.config import Config
-from discord_buttons_plugin import *
 class MPS(commands.Cog):
 
 
@@ -16,7 +11,6 @@ class MPS(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-
 
 
     @commands.command()
@@ -39,20 +33,20 @@ class MPS(commands.Cog):
 
             await ctx.send(embed=embed)
 
-
         except:
             embed = discord.Embed(
             title=('MPSVR is Offline'),
             description=('Yell at <@166311283744964608>!')
             )
             await ctx.send(embed=embed)
+
+
     @commands.command()
     async def common(self, ctx):
-        embed = discord.Embed(title='')
+        embed = discord.Embed()
         embed.add_field(name = 'Music cmds', value= "[prefix]play\n[prefix]now\n[prefix]skip\n[prefix]pause\n[prefix]stop", inline = True)
-        embed.add_field(name = 'Extra cmds', value= ";mpsvr\n;bday\n;uptime\n;rps", inline = True)
+        embed.add_field(name = 'Extra cmds', value= ";mpsvr Server status of MPSVR.\n;bday\n;uptime Total time bot has been up.\n;rps Rock, paper, scissors.\n;sticky Pins messages to bottom of channels.\n;unsticky unPins messages.", inline = False)
 
         embed.set_author(name='Common Commands')
-
 
         await ctx.send(embed=embed)
