@@ -44,14 +44,14 @@ class MPS(commands.Cog):
     async def common(self, ctx):
         embed = discord.Embed()
         embed.add_field(name = 'Music cmds', value= "[prefix]play\n[prefix]now\n[prefix]skip\n[prefix]pause\n[prefix]stop", inline = True)
-        embed.add_field(name = 'Extra cmds', value=('''
-        ;mpsvr Server status of MPSVR.
-        \n;bday
-        \n;uptime Total time bot has been up.
-        \n;rps Rock, paper, scissors.
-        \n;sticky Pins messages to bottom of channels.
-        \n;unsticky unPins messages.
-        ''')
+        embed.add_field(name = 'Extra cmds', value=
+        ";mpsvr Server status of MPSVR."
+        "\n;bday"
+        "\n;uptime Total time bot has been up."
+        "\n;rps Rock, paper, scissors."
+        "\n;sticky Pins messages to bottom of channels."
+        "\n;unsticky unPins messages."
+
         inline = False)
 
         embed.set_author(name='Common Commands')
