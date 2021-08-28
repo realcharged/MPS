@@ -14,21 +14,21 @@ class MPS(commands.Cog):
 
 
     @commands.command()
-    async def mpsvr(self, ctx):
+    async def mpsmc(self, ctx):
         """Displays server status."""
         try:
             server = MinecraftServer.lookup("mps.modded.fun:25565")
             status = server.status()
             query = server.query()
             embed = discord.Embed(
-                title=('MPSVR is currently Online'
+                title=('MPSMC is currently Online'
                        '\n{0} players online'
                        '\nPlayer List:'
                        .format(status.players.online)),
                 description=('{0}'.format(", ".join(query.players.names)))
             )
             embed.set_image(url="https://premium.bisecthosting.com/index.php?r=status/95613.png")
-            embed.set_author(name='MPSVR Status')
+            embed.set_author(name='MPSMC Status')
             embed.set_footer(text='End of list')
 
             await ctx.send(embed=embed)
@@ -44,8 +44,7 @@ class MPS(commands.Cog):
     @commands.command()
     async def common(self, ctx):
         embed = discord.Embed()
-        embed.add_field(name = 'Music cmds', value= "[prefix]play\n[prefix]now\n[prefix]skip\n[prefix]pause\n[prefix]stop", inline = True)
-        embed.add_field(name = 'Extra cmds', value= ";mpsvr Server status of MPSVR.\n;bday\n;uptime Total time bot has been up.\n;rps Rock, paper, scissors.\n;sticky Pins messages to bottom of channels.\n;unsticky unPins messages.", inline = False)
+        embed.add_field(name = 'Extra cmds', value= ";mpsmc Server status of MPSMC server.\n;uptime Total time bot has been up.\n;sticky Pins messages to bottom of channels.\n;unsticky unPins messages.", inline = False)
 
         embed.set_author(name='Common Commands')
 
