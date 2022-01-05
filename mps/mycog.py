@@ -17,7 +17,7 @@ class MPS(commands.Cog):
     async def mpsmc(self, ctx):
         """Displays server status."""
         try:
-            server = MinecraftServer.lookup("mps.modded.fun:25565")
+            server = MinecraftServer.lookup("167.114.15.118:25565")
             status = server.status()
             query = server.query()
             embed = discord.Embed(
